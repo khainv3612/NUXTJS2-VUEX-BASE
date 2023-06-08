@@ -1,0 +1,87 @@
+.chat-element {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .chat-content {
+    overflow: auto;
+    .chat-item {
+      display: flex;
+      padding: 12px 16px;
+      border-bottom: 1px solid $border-default;
+      img {
+        width: 24px;
+        height: 100%;
+        margin-right: 9px;
+        min-width: 24px;
+        object-fit: contain;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-dark;
+      }
+      &.chat-item-1 {
+        background: $color-dark-50;
+      }
+    }
+  }
+  .chat-input {
+    padding: 6px 17px 6px 15px;
+    position: relative;
+    .el-textarea {
+      padding: 7px 39px 5px 16px;
+      border: 1px solid $border-default;
+      border-radius: 18px;
+      width: auto;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+    }
+    textarea {
+      padding: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      resize: none;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      border: none;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+      }
+      &:focus, &:hover, &:active {
+        border: none;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &::-webkit-scrollbar-track {
+        background: unset;
+      }
+
+      &::-webkit-scrollbar {
+        background: unset;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: unset;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: unset;
+      }
+    }
+    .button-send {
+      position: absolute;
+      z-index: 2;
+      right: 28px;
+      bottom: 14px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

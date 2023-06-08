@@ -1,0 +1,9 @@
+{
+  "lang": "language",
+  "chat": {
+    "input_placeholder_send": "Bạn có thể hỏi tôi về một điều bạn muốn."
+  },
+  "common": {
+    "not_found": "The page you are looking for could not be found."
+  }
+}
